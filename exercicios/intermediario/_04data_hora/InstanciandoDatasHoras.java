@@ -55,7 +55,7 @@ public class InstanciandoDatasHoras {
         System.out.println("Parse 2 formatado com horas ISO_DATE_TIME = "+ d05.format(fmt4));
 
         System.out.println("Parse 3 = "+fmt3.format(d06));
-        System.out.println("Parse 3 formatado com horas ISO_INSTANT  teste= "+ fmt5.format(d06));
+        System.out.println("Parse 3 formatado com horas ISO_INSTANT = "+ fmt5.format(d06));
 
     }
 
