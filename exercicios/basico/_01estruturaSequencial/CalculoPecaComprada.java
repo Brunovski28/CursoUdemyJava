@@ -25,7 +25,7 @@ public class CalculoPecaComprada {
         System.out.println("Digite o valor da peça 2");
         double valor2 = entrada.nextDouble();
 
-        double total = (valor1 * qtd1) + (valor1 * qtd2);
+        double total = (valor1 * qtd1) + (valor2 * qtd2);
 
         System.out.printf("Valor a pagar: %.2f%n", total);
 

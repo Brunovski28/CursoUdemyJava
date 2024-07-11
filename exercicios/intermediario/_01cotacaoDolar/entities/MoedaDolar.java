@@ -4,7 +4,7 @@ public class MoedaDolar {
 
     public static void calc(double dolar, double qtdDolar){
 
-        double total = (dolar * qtdDolar)*1.06  ;
+        double total = (dolar * qtdDolar)*1.06;
 
         System.out.printf("Quantidade em reais que irá ser necessário: %.2f%n", total);
 

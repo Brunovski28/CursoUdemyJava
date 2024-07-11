@@ -7,6 +7,7 @@ public class EixoCartesiano {
     public static void main(String[] args) {
 
         Scanner entrada = new Scanner(System.in);
+        
         //                              Y
         //                         Q2   |   Q1
         //                       _______|_______ X
