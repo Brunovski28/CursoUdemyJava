@@ -13,16 +13,16 @@ public class SalarioImposto {
         double salarioComImposto = 0;
 
         if (salario > 4500){
-            salarioComImposto = salario - salario * 0.28;
+            salarioComImposto = salario * 0.28;
         } else if (salario > 3000) {
-            salarioComImposto = salario - salario * 0.18;
+            salarioComImposto = salario * 0.18;
         } else if (salario > 2000) {
-            salarioComImposto = salario - salario * 0.08;
+            salarioComImposto = salario * 0.08;
         } else {
             System.out.println("Isento");
         }
 
-        System.out.println("Salário sem imposto: "+salarioComImposto);
+        System.out.println(salarioComImposto);
 
     }
 

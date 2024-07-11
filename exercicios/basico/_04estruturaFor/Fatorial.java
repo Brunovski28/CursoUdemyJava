@@ -13,7 +13,7 @@ public class Fatorial {
 
         int resultado = num;
         for (int i = 1; i < num; i++) {
-            resultado *= i;
+            resultado*= i;
         }
 
         System.out.println("resultado: "+resultado);

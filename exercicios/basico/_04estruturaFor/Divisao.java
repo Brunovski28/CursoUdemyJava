@@ -24,8 +24,6 @@ public class Divisao {
             }
         }
         
-        entrada.close();
-
     }
     
 }

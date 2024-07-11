@@ -1,6 +1,7 @@
 package exercicios.intermediario._03arrays.vetores.Pensionato.application;
 
 import exercicios.intermediario._03arrays.vetores.Pensionato.entities.Room;
+
 import java.util.Scanner;
 
 public class Main {
@@ -16,7 +17,7 @@ public class Main {
 
         for (int i = 0; i < room.length; i++) {
 
-            System.out.println("Aluguel #" + (i + 1));
+            System.out.println("Alugel #" + (i + 1));
             System.out.println("Digite o nome do estudante");
             String name = entrada.nextLine();
             name = entrada.nextLine();
