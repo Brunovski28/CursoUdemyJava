@@ -23,6 +23,9 @@ public class DiaSemanaAno {
         System.out.println("d05 dia = "+  d05.getDayOfMonth());
         System.out.println("d05 mês = "+  d05.getMonthValue());
         System.out.println("d05 ano = "+  d05.getYear());
+
+        System.out.println("d06 = "+ d06);
+
     }
 
 }
