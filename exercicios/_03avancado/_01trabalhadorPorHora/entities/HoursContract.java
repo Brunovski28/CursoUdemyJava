@@ -2,16 +2,16 @@ package exercicios._03avancado._01trabalhadorPorHora.entities;
 
 import java.util.Date;
 
-public class hoursContract {
+public class HoursContract {
 
     private Date date;
     private Double valuePerHour;
     private int hours;
 
-    public hoursContract() {
+    public HoursContract() {
     }
 
-    public hoursContract(Date date, Double valuePerHour, int hours) {
+    public HoursContract(Date date, Double valuePerHour, int hours) {
         this.date = date;
         this.valuePerHour = valuePerHour;
         this.hours = hours;

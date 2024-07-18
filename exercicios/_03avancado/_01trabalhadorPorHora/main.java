@@ -30,9 +30,18 @@ public class main {
         int contracts[] = new int[quantityContracts];
 
         for (int i = 0; i < quantityContracts; i++) {
-            System.out.println("Entre com o #"+(i+1)+" dado do contrato");
+            System.out.println("\nEntre com o #"+(i+1)+" dado do contrato");
             System.out.println("Data (DD/MM/YYYY): ");
             String date = enter.next();
+
+            System.out.println("Valor por hora: ");
+            Double valueHour = enter.nextDouble();
+
+            System.out.println("Duração (Em horas)");
+            int hours = enter.nextInt();
+
+
+
         }
 
 

@@ -1,13 +1,13 @@
 package exercicios._03avancado._01trabalhadorPorHora.entities;
 
-public class department {
+public class Department {
 
     private String name;
 
-    public department() {
+    public Department() {
     }
 
-    public department(String name) {
+    public Department(String name) {
         this.name = name;
     }
 
