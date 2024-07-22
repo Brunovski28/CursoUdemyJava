@@ -1,5 +1,6 @@
 package exercicios._03avancado._02PostComComentarios.entities;
 
+import java.text.SimpleDateFormat;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -17,8 +18,7 @@ public class Post {
     private Integer likes;
 
     private List<Comment> comments = new ArrayList<>();
-    DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss").withZone(ZoneId.systemDefault());
-
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy HH:mm:ss");
 
     public Post() {
     }
@@ -76,17 +76,16 @@ public class Post {
 
     public String toString(){
 
-        return  title+
-                "\n"+likes+ " Likes - "+ fmt.format(moment.toInstant()) +
-                "\n"+content;
-    }
-
-    public void printComments(){
-
+        StringBuilder sb = new StringBuilder();
+        sb.append(title + "\n");
+        sb.append(likes + " Likes - "+ sdf.format(moment)+ "\n");
+        sb.append(content + "\n");
+        sb.append("Comentários:\n");
         for(Comment c: comments){
-            System.out.println(c.getText());
+            sb.append(c.getText()+"\n");
         }
 
+        return sb.toString();
     }
 
 }
