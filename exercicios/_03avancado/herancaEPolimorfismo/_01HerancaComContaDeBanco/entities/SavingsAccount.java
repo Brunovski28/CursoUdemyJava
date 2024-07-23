@@ -24,4 +24,9 @@ public class SavingsAccount extends Account {
         balance += balance * interestRate;
     }
 
+    @Override // Esse comando sobrescreve por cima o método que tem na superclasse
+    public void withdraw(double amount){
+        this.balance -= amount;
+    }
+
 }

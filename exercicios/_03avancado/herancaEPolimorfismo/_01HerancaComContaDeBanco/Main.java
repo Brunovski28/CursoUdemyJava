@@ -36,6 +36,22 @@ public class Main {
             System.out.println("Update");
         }
 
+
+        // Testando a sobreposição
+        Account acc6 = new Account(1005, "Mari", 1000);
+        acc6.withdraw(200);
+        System.out.println(acc6.getBalance());
+
+        Account acc7 = new SavingsAccount(1006, "Emerson", 1000, 0.01);
+        acc7.withdraw(200);
+        System.out.println(acc7.getBalance());
+
+
+        Account acc8 = new BusinessAccount(1007, "Camilo", 1000, 5000);
+        acc8.withdraw(200);
+        System.out.println(acc8.getBalance());
+
+
     }
 
 }
