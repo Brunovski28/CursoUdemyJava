@@ -38,6 +38,7 @@ public class Main {
 
 
         // Testando a sobreposição
+        // e Polimorfismo, que seria a linha 42, 46 e 51, que seria o tipo de váriavel account, mas recebe diferentes classes com diferentes métodos sobreescrevidos
         Account acc6 = new Account(1005, "Mari", 1000);
         acc6.withdraw(200);
         System.out.println(acc6.getBalance());
