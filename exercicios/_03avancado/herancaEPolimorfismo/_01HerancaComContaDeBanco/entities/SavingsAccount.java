@@ -1,6 +1,7 @@
 package exercicios._03avancado.herancaEPolimorfismo._01HerancaComContaDeBanco.entities;
 
-public class SavingsAccount extends Account {
+// o comando FINAL, não permite que não tenha uma subclasse
+public /*final*/class SavingsAccount extends Account {
 
     private double interestRate;
 
@@ -25,7 +26,8 @@ public class SavingsAccount extends Account {
     }
 
     @Override // Esse comando sobrescreve por cima o método que tem na superclasse
-    public void withdraw(double amount){
+    // Final não permiti que as subclasses use esse método para sobrepor
+    public final void withdraw(double amount){
         this.balance -= amount;
     }
 
