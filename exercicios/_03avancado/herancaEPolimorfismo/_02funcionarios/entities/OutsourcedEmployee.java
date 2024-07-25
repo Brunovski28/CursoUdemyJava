@@ -1,13 +1,13 @@
 package exercicios._03avancado.herancaEPolimorfismo._02funcionarios.entities;
 
-public class OutsourcedEmployeed extends Employee{
+public class OutsourcedEmployee extends Employee{
 
     private double additionalCharge;
 
-    public OutsourcedEmployeed() {
+    public OutsourcedEmployee() {
     }
 
-    public OutsourcedEmployeed(String name, Integer hours, double valuePerHour, double additionalCharge) {
+    public OutsourcedEmployee(String name, Integer hours, double valuePerHour, double additionalCharge) {
         super(name, hours, valuePerHour);
         this.additionalCharge = additionalCharge;
     }
@@ -22,7 +22,7 @@ public class OutsourcedEmployeed extends Employee{
 
     @Override
     public double payment(){
-        return super.payment() + (getHours() * (additionalCharge/100));
+        return super.payment() + (additionalCharge * 1.1);
     }
 
 }

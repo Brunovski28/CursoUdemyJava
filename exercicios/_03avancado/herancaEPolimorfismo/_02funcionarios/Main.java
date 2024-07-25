@@ -1,7 +1,7 @@
 package exercicios._03avancado.herancaEPolimorfismo._02funcionarios;
 
 import exercicios._03avancado.herancaEPolimorfismo._02funcionarios.entities.Employee;
-import exercicios._03avancado.herancaEPolimorfismo._02funcionarios.entities.OutsourcedEmployeed;
+import exercicios._03avancado.herancaEPolimorfismo._02funcionarios.entities.OutsourcedEmployee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +39,7 @@ public class Main {
                 System.out.println("cobrança adicional: ");
                 double additionalCharge = enter.nextDouble();
 
-                employee = new OutsourcedEmployeed(name, hours, valuePerHour, additionalCharge);
+                employee = new OutsourcedEmployee(name, hours, valuePerHour, additionalCharge);
 
             } else {
 
