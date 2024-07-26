@@ -1,6 +1,6 @@
 package exercicios._03avancado.herancaEPolimorfismo._04Abstrato.entities;
 
-public abstract class Account {
+public class Account {
 
     private Integer number;
     private String holder;

@@ -1,7 +1,5 @@
 package exercicios._03avancado.herancaEPolimorfismo._04Abstrato.entities;
 
-import exercicios._03avancado.herancaEPolimorfismo._01HerancaComContaDeBanco.entities.Account;
-
 public class BusinessAccount extends Account {
 
     private double loanLimit;
