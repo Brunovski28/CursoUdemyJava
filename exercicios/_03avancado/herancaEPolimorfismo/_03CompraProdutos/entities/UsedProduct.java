@@ -1,10 +1,13 @@
 package exercicios._03avancado.herancaEPolimorfismo._03CompraProdutos.entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public final class UsedProduct extends Product{
 
     private Date manufactureDate;
+
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/mm/yyyy");
 
     public UsedProduct() {
     }
@@ -24,7 +27,7 @@ public final class UsedProduct extends Product{
 
     @Override
     public String priceTag(){
-        return getName() + " (usado) $ " + getPrice() + "(Manufacture date: " + manufactureDate + ")";
+        return getName() + " (usado) $ " + String.format("%.2f",getPrice()) + " (Data fabricado: " + sdf.format(manufactureDate) + ")";
     }
 
 }
