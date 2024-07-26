@@ -65,13 +65,7 @@ public class Main {
 
         for (int i = 0; i < products.size(); i++) {
 
-            if (products.get(i) instanceof ImportedProduct){
-                System.out.println((products.get(i)).priceTag());
-            } else if (products.get(i) instanceof UsedProduct) {
-                System.out.println((products.get(i)).priceTag());
-            } else {
-                System.out.println(products.get(i).priceTag());
-            }
+            System.out.println(products.get(i).priceTag());
 
         }
 
