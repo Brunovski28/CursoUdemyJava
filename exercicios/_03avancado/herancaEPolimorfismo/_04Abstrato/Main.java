@@ -11,6 +11,7 @@ public class Main {
         // Quando a classe é abstrata, não pode ser instanciada
         // Account acc1 = new Account();
 
+        //
         Account acc2 = new BusinessAccount(1001, "Bruno", 1000, 400);
         Account acc3 = new SavingsAccount(1002, "Camilo", 500, 0.01);
 
