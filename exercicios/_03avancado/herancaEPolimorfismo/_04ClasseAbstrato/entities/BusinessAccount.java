@@ -1,4 +1,4 @@
-package exercicios._03avancado.herancaEPolimorfismo._04Abstrato.entities;
+package exercicios._03avancado.herancaEPolimorfismo._04ClasseAbstrato.entities;
 
 public class BusinessAccount extends Account {
 

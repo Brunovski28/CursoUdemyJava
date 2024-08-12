@@ -1,4 +1,4 @@
-package exercicios._03avancado.herancaEPolimorfismo._04Abstrato.entities;
+package exercicios._03avancado.herancaEPolimorfismo._04ClasseAbstrato.entities;
 
 // o comando FINAL, não permite que não tenha uma subclasse
 public /*final*/class SavingsAccount extends Account {
